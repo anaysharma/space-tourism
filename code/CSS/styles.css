@@ -1,0 +1,128 @@
+:root {
+	--font-H1: 150px Bellefair;
+	--font-H2: 100px Bellefair;
+	--font-H3: 56px Bellefair;
+	--font-H4: 32px Bellefair;
+	--font-H5: 28px Barlow Condensed;
+
+	--font-P1: 28px Bellefair;
+	--font-P2: 14px Barlow Condensed;
+
+	--font-Nav: 16px Barlow Condensed;
+	--font-Body: 14px arial;
+
+	--color-primary: #ffffff;
+	--color-secondary: #d0d6f9;
+	--color-tertiary: #0b0d17;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+main {
+	height: 100vh;
+	width: 100vw;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(../assets/home/background-home-desktop.jpg);
+}
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	left: 0;
+	right: 0;
+}
+
+.navbar-icon {
+	padding: 4rem 3rem;
+}
+
+.navbar-list {
+	background: rgba(180, 180, 180, 0.08);
+	backdrop-filter: blur(2rem);
+	height: 6rem;
+	padding-inline: 9rem;
+	display: flex;
+	align-items: center;
+	column-gap: 3rem;
+	list-style: none;
+	letter-spacing: 0.4ch;
+	text-transform: uppercase;
+	font: var(--font-Nav);
+	color: var(--color-primary);
+}
+
+.navbar-line {
+	z-index: 10;
+	transform: translateX(30px);
+	height: 1px;
+	width: 40%;
+	background-color: rgba(100, 100, 100, 0.6);
+}
+
+.navbar-link {
+	color: var(--color-primary);
+	text-decoration: none;
+}
+
+.navbar-item span {
+	font-weight: 800;
+}
+
+.navbar-item {
+	display: flex;
+	padding-block: calc((6rem / 2) - 12px);
+	column-gap: 0.6rem;
+}
+
+.navbar-active {
+	border-bottom: 3px solid white;
+}
+
+.main {
+	position: absolute;
+	inset: auto 8rem 8rem 8rem;
+	display: flex;
+	column-gap: 20%;
+	font: var(--font-Body);
+	color: var(--color-secondary);
+}
+
+.heading {
+	font: var(--font-H5);
+	color: var(--color-secondary);
+}
+
+.title {
+	margin: 0;
+	padding: 0;
+	font: var(--font-H1);
+	text-transform: uppercase;
+	color: var(--color-primary);
+}
+.explore {
+	margin: auto 0 0 0;
+}
+.explore-button {
+	margin: auto 0;
+	height: 14rem;
+	aspect-ratio: 1;
+	border-style: none;
+	border-radius: 100%;
+	font: var(--font-P1);
+	text-transform: uppercase;
+	transition: 200ms;
+}
+
+.explore-button:hover {
+	box-shadow: 0 0 0 4rem rgba(255, 255, 255, 0.159);
+}
