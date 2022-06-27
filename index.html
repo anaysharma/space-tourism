@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tab Icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <title>Space tourism website</title>
+    <script src="/navigation.js" defer ></script>
+  </head>
+  <body class="home">
+    <a class="skip-to-content" href="#main">Skip to content</a>
+    <header class="primary-header flex">
+      <img src="./assets/shared/logo.svg" class="logo" alt="space logo" />
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+      <nav>
+        <ul
+          id="primary-navigation"
+          data-visible="false"
+          class="primary-navigation flex underline-indicators fs-300"
+        >
+          <li class="active">
+            <a
+              class="uppercase text-white letter-spacing-2 ff-sans-cond"
+              href="index.html"
+              ><span aria-hidden="true">00</span>Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="uppercase text-white letter-spacing-2 ff-sans-cond"
+              href="destination.html"
+              ><span aria-hidden="true">01</span>Destination</a
+            >
+          </li>
+          <li>
+            <a
+              class="uppercase text-white letter-spacing-2 ff-sans-cond"
+              href="crew.html"
+              ><span aria-hidden="true">02</span>Crew</a
+            >
+          </li>
+          <li>
+            <a
+              class="uppercase text-white letter-spacing-2 ff-sans-cond"
+              href="technology.html"
+              ><span aria-hidden="true">03</span>Technology</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main" class="grid-container grid-container--home">
+      <div class="flow">
+        <h1 class="text-light ff-sans-cond fs-500 uppercase letter-spacing-1">
+          So, you want to travel to
+          <span class="d-block ff-serif fs-900 uppercase text-white">Space</span>
+        </h1>
+        <p class="text-light">
+          Let’s face it; if you want to go to space, you might as well genuinely
+          go to outer space and not hov er kind of on the edge of it. Well sit
+          back, and relax because we’ll give you a truly out of this world
+          experience!
+        </p>
+      </div>
+      <div>
+        <a
+          href="destination.html"
+          class="large-button text-dark bg-white uppercase ff-serif"
+          >Explore</a
+        >
+      </div>
+    </main>
+
+  </body>
+</html>
